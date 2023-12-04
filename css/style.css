@@ -1,0 +1,244 @@
+/*  Fill background with image */
+body{
+    background-image: url('../images/pexels-eva-bronzini-7605260.jpg');
+}
+/* Nav Bar Style */
+nav{
+    padding-bottom: 120px;
+}
+.navbarScroll.navbarDark {
+    background-color: black;
+    opacity: 0.75;
+}
+li.nav-item > a{
+    color: white;
+    text-decoration: none;
+    padding-right:10px;
+    padding-left:10px;
+}
+li.nav-item > a:hover,
+li.nav-item > a:focus {
+  text-decoration: line-through;
+  border-radius: 14px;
+  box-shadow: 0 0 20px #6699CC;
+}
+
+/* Text of all sections = white */
+#about, #projects, #expierence{
+    color:white;
+}
+/* #about > div > div > div.col-lg-8 > p {
+    position: relative;
+}
+#about > div > div > div.col-lg-8 > p::before {  
+    transform: scaleX(0);
+    content: " ";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: #5097A4;
+    transition:.80s ease;
+    z-index: -1;
+    transform-origin: left;
+    height: 0%;
+    padding-top: 50%;
+  }
+  
+#about > div > div > div.col-lg-8 > p:hover::before {
+    transform: scaleX(1);
+
+} */
+
+
+#projects > div > h1,
+#education > h2 {
+    font-size: 40px;
+}
+  
+
+
+/* Homepage */
+.homePage header{
+    display: none;
+}
+.homePage {
+    background: url('../images/graduationPhoto.jpeg');
+    background-size: cover;
+    position: fixed;
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+}
+#home {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%;
+}
+.intro {
+    font-size: 4.5rem;
+}
+#home > div > div > div > h1 {
+    padding-top: 30%;
+    padding-left: 10px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+.custom-outline-primary {
+    color: black;
+    border-color: white;
+}
+
+.custom-outline-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    #home > div > div > div > h2 {
+        -webkit-text-stroke-width: 0px;
+        color: white;
+    }
+}
+
+
+/* About Styling */
+.about {
+    width: 100%;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+  
+.about:hover {
+    transform: scale(1.02);
+}
+
+.about:hover .about:not(:hover) {
+    transform: scale(0.9);
+}
+#about-text{
+    font-size: 40px;
+}
+#about > div > div > div.col-lg-8 > p{
+    padding-top: 100px;
+}
+#about > div > div > div.col-lg-4 > div > img{
+    box-shadow: 0.5rem 0.5rem #0066b2, -0.5rem -0.5rem #ccc;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto; 
+    padding-bottom: 5rem;
+    position: relative; 
+}
+
+.education {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.heading{
+    color: white;
+    padding-top: 50px;
+}
+.education-column { 
+    flex: 1 1 40rem;
+}
+.education-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+    color: aliceblue;
+}
+.education-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5rem;
+    z-index: 1; 
+}
+.education-column .education-box {
+    border-left: .2rem solid white;
+    margin-left: 50px;
+}
+.education-box .education-content {
+    position: relative;
+    padding-left: 2rem;
+}
+.education-box .education-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: #5097A4;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+.education-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid white;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    background: #ADD8E6;
+    z-index: 2;
+}
+.education-content .content::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0%;
+    height:100%;
+    z-index: -1;
+    transition: .5s;
+    background: #5097A4;
+}
+.education-content .content:hover::before{
+    width: 100%;
+}
+#education > div > div:nth-child(1) > div > div > div > div{
+    font-weight: bold;
+}
+
+#education > div > div:nth-child(2) > div > div > div > div{
+    font-weight: bold;
+}
+#education > div > div:nth-child(2) > div{
+    padding-right: 50px;
+}
+
+#about > div > div {
+    padding-bottom: 75px;
+}
+#projects {
+    padding-bottom: 75px;
+}
+.servicesText{
+    height: 100%;
+}
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+  
+.servicesText {
+    height: 100%;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+  
+.servicesText:hover {
+    transform: scale(1.1);
+    background: #ADD8E6;
+}
+
+.servicesText:hover .servicesText:not(:hover) {
+    transform: scale(0.9);
+}
+
