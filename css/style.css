@@ -219,11 +219,6 @@ li.nav-item > a:focus {
     .education-row {
         flex-wrap: wrap;
     }
-    .navbarScroll.navbarDark {
-        background-color: white;
-        opacity: 1;
-        color: black;
-    }
     .navbar-nav {
         align-items: flex-end;
     }
