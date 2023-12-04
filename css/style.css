@@ -243,4 +243,9 @@ li.nav-item > a:focus {
     #education > div > div:nth-child(2) > div {
         padding-right: 0%;
     }
+    .custom-outline-primary {
+        color: black;
+        border-color: white;
+        background-color: white;
+    }
 }
