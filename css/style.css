@@ -27,34 +27,11 @@ li.nav-item > a:focus {
 #about, #projects, #expierence{
     color:white;
 }
-/* #about > div > div > div.col-lg-8 > p {
-    position: relative;
-}
-#about > div > div > div.col-lg-8 > p::before {  
-    transform: scaleX(0);
-    content: " ";
-    position: absolute;
-    inset: 0 0 0 0;
-    background: #5097A4;
-    transition:.80s ease;
-    z-index: -1;
-    transform-origin: left;
-    height: 0%;
-    padding-top: 50%;
-  }
-  
-#about > div > div > div.col-lg-8 > p:hover::before {
-    transform: scaleX(1);
-
-} */
-
 
 #projects > div > h1,
 #education > h2 {
     font-size: 40px;
 }
-  
-
 
 /* Homepage */
 .homePage header{
@@ -93,13 +70,6 @@ li.nav-item > a:focus {
     color: black;
 }
 
-@media screen and (max-width: 1200px) {
-    #home > div > div > div > h2 {
-        -webkit-text-stroke-width: 0px;
-        color: white;
-    }
-}
-
 
 /* About Styling */
 .about {
@@ -135,7 +105,6 @@ li.nav-item > a:focus {
     padding-bottom: 5rem;
     position: relative; 
 }
-
 .education {
     display: flex;
     flex-wrap: nowrap;
@@ -158,6 +127,7 @@ li.nav-item > a:focus {
     gap: 5rem;
     z-index: 1; 
 }
+
 .education-column .education-box {
     border-left: .2rem solid white;
     margin-left: 50px;
@@ -235,10 +205,26 @@ li.nav-item > a:focus {
   
 .servicesText:hover {
     transform: scale(1.1);
-    background: #ADD8E6;
+    background: #B2BEB5;
 }
 
 .servicesText:hover .servicesText:not(:hover) {
     transform: scale(0.9);
 }
-
+@media screen and (max-width: 1200px) {
+    #home > div > div > div > h2 {
+        -webkit-text-stroke-width: 0px;
+        color: white;
+    }
+    .education-row {
+        flex-wrap: wrap;
+    }
+    .navbarScroll.navbarDark {
+        background-color: white;
+        opacity: 1;
+        color: black;
+    }
+    .navbar-nav {
+        align-items: flex-end;
+    }
+}
