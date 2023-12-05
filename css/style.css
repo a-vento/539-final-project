@@ -1,7 +1,9 @@
 /*  Fill background with image */
 body{
     background-image: url('../images/pexels-eva-bronzini-7605260.jpg');
+    margin-bottom: 100px;
 }
+
 /* Nav Bar Style */
 nav{
     padding-bottom: 120px;
@@ -24,7 +26,7 @@ li.nav-item > a:focus {
 }
 
 /* Text of all sections = white */
-#about, #projects, #expierence{
+#about, #projects, #expierence, #fun {
     color:white;
 }
 
@@ -210,6 +212,77 @@ li.nav-item > a:focus {
 
 .servicesText:hover .servicesText:not(:hover) {
     transform: scale(0.9);
+}
+
+.text-center {
+    color: white;
+}
+#fun > div > div > div.img-wrapper > img{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+
+}
+.panel{
+    color: #483248;
+}
+.accordion {
+    background-color: #E6E6FA;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+#fun > div > button:nth-child(3){
+    border-top: #B2BEB5 solid 5px;
+    border-left: #B2BEB5 solid 5px;
+    border-right: #B2BEB5 solid 5px;
+}
+#fun > div > button:nth-child(5){
+    border: #B2BEB5 solid 5px;
+}
+#fun > div > button:nth-child(7){
+    border-bottom: #B2BEB5 solid 5px;
+    border-left: #B2BEB5 solid 5px;
+    border-right: #B2BEB5 solid 5px;
+}
+
+
+.active, .accordion:hover {
+background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: #CBC3E3;
+    display: none;
+    overflow: hidden;
+}
+.panel {
+    padding: 0 18px;
+    background-color: #CBC3E3;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 @media screen and (max-width: 1200px) {
     .homePage {
