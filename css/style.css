@@ -19,7 +19,7 @@ nav{
     padding-bottom: 120px;
 }
 .navbarScroll.navbarDark {
-    background-color: black;
+    background-color: #F37413;
     opacity: 0.75;
 }
 li.nav-item > a{
@@ -82,7 +82,6 @@ li.nav-item > a:focus {
     color: black;
 }
 
-
 /* About Styling */
 .about {
     width: 100%;
@@ -94,20 +93,13 @@ li.nav-item > a:focus {
 .about:hover {
     transform: scale(1.02);
 }
-
-.about:hover .about:not(:hover) {
-    transform: scale(0.9);
-}
 #about-text{
     font-size: 40px;
 }
 #about > div > div > div.col-lg-8 > p{
     padding-top: 100px;
 }
-/* #about > div > div > div.col-lg-4 > div > img{
-    box-shadow: 0.5rem 0.5rem #0066b2, -0.5rem -0.5rem #ccc;
-} */
-
+/* Education Styling */
 .education {
     display: flex;
     justify-content: center;
@@ -116,9 +108,6 @@ li.nav-item > a:focus {
     min-height: auto; 
     padding-bottom: 5rem;
     position: relative; 
-}
-.education {
-    display: flex;
     flex-wrap: nowrap;
 }
 .heading{
@@ -140,23 +129,15 @@ li.nav-item > a:focus {
     z-index: 1; 
 }
 
-.education-column .education-box {
+.education-box {
     border-left: .2rem solid white;
     margin-left: 50px;
 }
-.education-box .education-content {
+.education-content {
     position: relative;
     padding-left: 2rem;
 }
-.education-box .education-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    background: #5097A4;
-    border-radius: 50%;
-    padding-top: 10px;
-}
-.education-content .content {
+.content {
     position: relative;
     padding: 1.5rem;
     border: .2rem solid white;
@@ -166,7 +147,7 @@ li.nav-item > a:focus {
     background: #ADD8E6;
     z-index: 2;
 }
-.education-content .content::before{
+.content::before {
     content: '';
     position: absolute;
     top:0;
@@ -177,23 +158,22 @@ li.nav-item > a:focus {
     transition: .5s;
     background: #5097A4;
 }
-.education-content .content:hover::before{
+.content:hover::before{
     width: 100%;
 }
 #education > div > div:nth-child(1) > div > div > div > div{
     font-weight: bold;
 }
-
 #education > div > div:nth-child(2) > div > div > div > div{
     font-weight: bold;
 }
 #education > div > div:nth-child(2) > div{
     padding-right: 50px;
 }
-
 #about > div > div {
     padding-bottom: 75px;
 }
+/* Specialties CSS */
 #projects {
     padding-bottom: 75px;
 }
@@ -204,29 +184,21 @@ li.nav-item > a:focus {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    pointer-events: none;
-    transition: all 0.4s;
-}
-  
-.servicesText {
-    height: 100%;
     pointer-events: auto;
-    transform: scale(1);
     transition: all 0.4s;
 }
   
 .servicesText:hover {
     transform: scale(1.1);
     background: #B2BEB5;
-}
-
-.servicesText:hover .servicesText:not(:hover) {
-    transform: scale(0.9);
+    transition: all 0.4s;
 }
 
 .text-center {
     color: white;
 }
+
+/* Fun CSS */
 #fun > div > div > div.img-wrapper > img{
     max-width: 50%;
     height: auto;
@@ -236,21 +208,18 @@ li.nav-item > a:focus {
     margin-bottom: 50px;
 
 }
+
+/* Accordian CSS */
 .panel{
     color: #483248;
+    padding: 0 18px;
+    background-color: #CBC3E3;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.9s ease-out;
 }
-.accordion {
-    background-color: #E6E6FA;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-#fun > div > button:nth-child(3){
+#fun > div > button:nth-child(3){ 
     border-top: #B2BEB5 solid 5px;
     border-left: #B2BEB5 solid 5px;
     border-right: #B2BEB5 solid 5px;
@@ -263,28 +232,22 @@ li.nav-item > a:focus {
     border-left: #B2BEB5 solid 5px;
     border-right: #B2BEB5 solid 5px;
 }
-
-
+.accordion {
+    background-color: #E6E6FA;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
 .active, .accordion:hover {
 background-color: #ccc;
 }
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 0 18px;
-    background-color: #CBC3E3;
-    display: none;
-    overflow: hidden;
-}
-.panel {
-    padding: 0 18px;
-    background-color: #CBC3E3;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795'; 
     font-size: 13px;
     color: #777;
     float: right;
@@ -292,8 +255,10 @@ background-color: #ccc;
 }
 
 .active:after {
-content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796"; 
 }
+
+/* Mobile CSS */
 @media screen and (max-width: 1200px) {
     .homePage {
         background: #5097A4;
@@ -301,7 +266,6 @@ content: "\2796"; /* Unicode character for "minus" sign (-) */
     body{
         padding-right: 20px;
         padding-left: 20px;
-        background-image: url('../images/pexels-eva-bronzini-7605260.jpg');
         overflow: auto;
     }
     .education-column .title {
