@@ -19,14 +19,24 @@ nav{
 }
 .navbarScroll.navbarDark {
     background-color: #F37413;
-    opacity: 0.75;
+    opacity: 1;
+    color: black;
 }
+.navbarColor{
+    color: black;
+}
+
+.nav-link.navbarLinkColor{
+    color: black;
+}
+
 li.nav-item > a{
     color: white;
     text-decoration: none;
     padding-right:10px;
     padding-left:10px;
 }
+
 li.nav-item > a:hover,
 li.nav-item > a:focus {
   text-decoration: line-through;
