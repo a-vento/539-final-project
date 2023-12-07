@@ -5,7 +5,6 @@ body{
 }
 img {
     padding: 10px;
-    outline-offset: 5;
     transition: .8s;
 }
 img:hover {
@@ -26,6 +25,9 @@ nav{
     color: black;
 }
 
+.navbar-toggler{
+    background-color: #5097A4;
+}
 .nav-link.navbarLinkColor{
     color: black;
 }
@@ -226,7 +228,7 @@ li.nav-item > a:focus {
     display: none;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.9s ease-out;
+    transition: max-height 0.3s ease-out;
 }
 #fun > div > button:nth-child(3){ 
     border-top: #B2BEB5 solid 5px;
@@ -268,9 +270,27 @@ background-color: #ccc;
 }
 
 /* Mobile CSS */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 991px) {
     .homePage {
         background: #5097A4;
+    }
+    img {
+        outline: 2px solid yellow;
+        outline-offset: 10;
+    }
+    #about > div > div > div.col-lg-4 > div > img{
+        max-width: 50%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    #about > div > div > div.col-lg-8 > p {
+        padding: 0;
+    }
+    .heading {
+        padding: 0px;
     }
     body{
         padding-right: 20px;
